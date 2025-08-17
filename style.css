@@ -1,0 +1,281 @@
+/* Import Font dari Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* PENGATURAN DASAR & SCROLL (FINAL) */
+html {
+  scroll-padding-top: 90px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* NAVBAR */
+.navbar-custom {
+  background-color: #213363;
+}
+.navbar-custom .navbar-nav .nav-link {
+  color: white;
+  font-weight: 600;
+}
+.navbar-custom .navbar-nav .nav-link.active {
+  color: #cccccc;
+}
+
+/* GAYA TOMBOL */
+.btn-custom-navy {
+  background-color: #213363;
+  border: 1px solid #213363;
+  color: white;
+  transition: all 0.3s ease;
+}
+.btn-custom-navy:hover {
+  background-color: #ffffff;
+  color: #213363;
+  border: 1px solid #213363;
+}
+.btn-outline-navy {
+  color: #213363;
+  border: 1px solid #213363;
+  transition: all 0.3s ease;
+}
+.btn-outline-navy:hover {
+  background-color: #213363;
+  color: white;
+}
+
+/* BAGIAN SECTION */
+.hero {
+  min-height: 100vh;
+}
+.pendahuluan,
+.tujuan,
+.hasil,
+.faq {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.tujuan {
+  background-color: #f8f9fa;
+}
+.hasil {
+  background-color: #ffffff;
+}
+.faq {
+  background-color: #f8f9fa;
+}
+
+/* BAGIAN KARTU TUJUAN */
+.tujuan-card {
+  background-color: #213363;
+  color: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  height: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tujuan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.tujuan-card i {
+  color: #ffc107;
+}
+
+/* MODAL / OVERLAY POP-UP */
+#tujuan-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+#tujuan-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+#tujuan-modal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+#tujuan-overlay.active #tujuan-modal {
+  transform: scale(1);
+}
+#tujuan-modal .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.8rem;
+  color: #555;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+#tujuan-modal .close-btn:hover {
+  color: #000;
+  transform: rotate(90deg);
+}
+#modal-image {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+/* KOTAK PETUNJUK & CATATAN */
+.petunjuk-box {
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  color: #6c757d;
+}
+.petunjuk-box strong {
+  color: #212529;
+}
+
+/* KARTU HASIL PENELITIAN */
+.hasil-card-link {
+  text-decoration: none;
+}
+.hasil-card {
+  background-color: #213363;
+  color: white;
+  border-radius: 15px;
+  padding: 35px 25px;
+  text-align: center;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hasil-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(33, 51, 99, 0.3);
+}
+.hasil-card i {
+  color: #ffc107;
+}
+.hasil-card .link-dashboard {
+  font-weight: bold;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: all 0.2s;
+}
+.hasil-card:hover .link-dashboard {
+  transform: scale(1.05);
+}
+
+/* STYLE UNTUK FAQ & FOOTER */
+.faq .accordion-button {
+  font-weight: 600;
+}
+.faq .accordion-button:not(.collapsed) {
+  color: white;
+  background-color: #213363;
+}
+.faq .accordion-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(33, 51, 99, 0.2);
+}
+.faq .accordion-item {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid #dee2e6;
+  margin-bottom: 1rem;
+}
+.faq .accordion-body {
+  background-color: #ffffff;
+  color: #495057;
+}
+
+.footer {
+  background-color: #213363;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+.footer .list-unstyled li {
+  margin-bottom: 0.8rem;
+}
+.footer .list-unstyled a {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer .list-unstyled a:hover {
+  color: #ffffff;
+}
+
+/* STYLE UNTUK HALAMAN DETAIL HASIL */
+.hasil-detail {
+  background-color: #ffffff;
+}
+
+.dashboard-container {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dee2e6;
+}
+
+.dashboard-iframe {
+  width: 100%;
+  height: 70vh; /* Tinggi dashboard sekitar 70% dari tinggi layar */
+  display: block;
+}
+
+.analisis-text p {
+  line-height: 1.8;
+  color: #495057;
+}
+
+/* KOTAK INFO DI HERO SECTION */
+.info-box {
+  background-color: #f8f9fa; /* Latar belakang abu-abu sangat terang */
+  border-left: 5px solid #213363; /* Garis aksen biru tua di kiri */
+  padding: 1rem 1.5rem; /* Jarak di dalam kotak */
+  border-radius: 0.5rem; /* Sudut sedikit melengkung */
+}
+
+.info-box p {
+  margin-bottom: 0.5rem; /* Jarak antar baris nama dan dosen */
+  color: #495057; /* Warna teks sedikit gelap */
+}
+
+.info-box p strong {
+  color: #212529; /* Warna teks "Nama:" dan "Dosen Pembimbing:" jadi hitam */
+}
+
+/* Untuk mengecilkan gambar peta parameter */
+.parameter-item img {
+  max-width: 550px; /* Atur ukuran maksimal gambar di sini */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Mengecilkan gambar peta di halaman hasil */
+.peta-analisis {
+  max-width: 75%;
+  height: auto;
+}

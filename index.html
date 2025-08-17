@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./assets/stis.png" type="image/x-icon" />
+
+    <title>Artefak D4 KS-Sains Data</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body id="home">
+    <nav class="navbar navbar-expand-lg navbar-custom py-3 sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-white" href="#home">
+          <img
+            src="./assets/stis.png"
+            alt="Logo"
+            width="30"
+            height="30"
+            class="d-inline-block align-text-top rounded me-2"
+          />
+          Politeknik Statistika STIS
+        </a>
+        <button
+          class="navbar-toggler shadow-none border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto d-flex gap-3 text-center pt-lg-0 pt-4">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pendahuluan">Pendahuluan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tujuan">Tujuan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hasil">Hasil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="hero py-5 d-flex align-items-center">
+      <div class="container">
+        <div
+          class="row align-items-center flex-md-row flex-column-reverse gap-md-0 gap-5"
+        >
+          <div class="col-lg-7">
+            <h1 class="fs-3 fw-bold">
+              Analisis Spasial dan Pemetaan <br />
+              <span>Tingkat Kerawanan Fisik Alami Tanah Longsor</span><br />
+              Menggunakan Data Geospasial Citra Satelit <br />
+              Tahun 2023 <br />
+              (Studi Kasus: Kabupaten Bogor)
+            </h1>
+            <p class="lh-lg my-4">
+              Website ini menyajikan analisis spasial dan pemetaan mengenai
+              tingkat kerawanan fisik alami tanah longsor di Kabupaten Bogor.
+              Diharapkan dapat menjadi rekomendasi pemerintah untuk upaya
+              mitigasi atau evaluasi bencana dan perencanaan tata ruang.
+            </p>
+            <div class="info-box my-4">
+              <p><strong>Nama:</strong> Yuli Arindah</p>
+              <p class="mb-0">
+                <strong>Dosen Pembimbing:</strong> Dr. Ernawati Pasaribu, S.Si.,
+                M.E.
+              </p>
+            </div>
+            <div class="d-flex gap-2">
+              <a href="#tujuan" class="btn btn-custom-navy">Lihat Tujuan</a>
+              <a
+                href="./assets/proposal.pdf"
+                class="btn btn-outline-navy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lihat Proposal
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-5 mt-4 mt-lg-0">
+            <img
+              src="./assets/longsor.jpg"
+              class="img-fluid rounded"
+              alt="Ilustrasi Longsor"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pendahuluan" id="pendahuluan">
+      <div class="container">
+        <div class="pendahuluan-box text-center">
+          <h1 class="fw-bold mb-4">Pendahuluan</h1>
+          <p>
+            Provinsi Jawa Barat merupakan salah satu wilayah yang memiliki
+            potensi tinggi dalam terjadinya bencana tanah longsor. Berdasarkan
+            data Badan Pusat Statistik, provinsi ini mengalami 1.560 kejadian
+            dari tahun 2019-2023. Kabupaten Bogor menempati peringkat pertama di
+            Jawa Barat dengan 434 kejadian dalam periode yang sama, disebabkan
+            oleh letak geografisnya yang didominasi dataran tinggi, perbukitan,
+            serta curah hujan yang tinggi.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="tujuan py-5" id="tujuan">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h1 class="fw-bold">Tujuan Penelitian</h1>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div
+              class="tujuan-card"
+              data-title="Tujuan 1: Pemetaan Faktor Kerawanan"
+              data-text="Memetakan kerawanan fisik alami tanah longsor berdasarkan faktor curah hujan, kemiringan lereng, jenis tanah, ketinggian, dan tutupan lahan."
+            >
+              <div class="tujuan-card-content">
+                <i class="fa-solid fa-layer-group fa-3x mb-3"></i>
+                <h4 class="fw-bold">Tujuan 1</h4>
+                <p>Pemetaan Faktor Kerawanan</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div
+              class="tujuan-card"
+              data-title="Tujuan 2: Analisis Sebaran Spasial"
+              data-text="Menganalisis spasial sebaran daerah rawan bencana tanah longsor."
+            >
+              <div class="tujuan-card-content">
+                <i class="fa-solid fa-chart-area fa-3x mb-3"></i>
+                <h4 class="fw-bold">Tujuan 2</h4>
+                <p>Analisis Sebaran Spasial</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div
+              class="tujuan-card"
+              data-title="Tujuan 3: Analisis Dampak Kerawanan"
+              data-text="Menganalisis dampak kerawanan fisik alami bencana tanah longsor."
+            >
+              <div class="tujuan-card-content">
+                <i class="fa-solid fa-house-damage fa-3x mb-3"></i>
+                <h4 class="fw-bold">Tujuan 3</h4>
+                <p>Analisis Dampak Kerawanan</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4">
+            <div
+              class="tujuan-card"
+              data-title="Tujuan 4: Pembangunan Website Interaktif"
+              data-text="Membangun web yang berguna dalam menyajikan hasil penelitian."
+            >
+              <div class="tujuan-card-content">
+                <i class="fa-solid fa-laptop-code fa-3x mb-3"></i>
+                <h4 class="fw-bold">Tujuan 4</h4>
+                <p>Pembangunan Website Interaktif</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="petunjuk-box mt-5">
+          <p class="mb-0">
+            <strong>Petunjuk:</strong> Klik pada setiap kotak tujuan untuk
+            melihat detailnya.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="hasil py-5" id="hasil">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h1 class="fw-bold">Hasil Penelitian</h1>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="hasil-1.html" class="hasil-card-link">
+              <div class="hasil-card">
+                <i class="fa-solid fa-map-location-dot fa-3x mb-4"></i>
+                <h5 class="fw-bold">Hasil Tujuan 1</h5>
+                <p>Peta Kerawanan Berdasarkan Faktor</p>
+                <span class="link-dashboard">
+                  Lihat Dashboard <i class="fas fa-arrow-right ms-2"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="hasil-2.html" class="hasil-card-link">
+              <div class="hasil-card">
+                <i class="fa-solid fa-map-pin fa-3x mb-4"></i>
+                <h5 class="fw-bold">Hasil Tujuan 2</h5>
+                <p>Peta Sebaran Spasial Daerah Rawan</p>
+                <span class="link-dashboard">
+                  Lihat Dashboard <i class="fas fa-arrow-right ms-2"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a href="hasil-3.html" class="hasil-card-link">
+              <div class="hasil-card">
+                <i class="fa-solid fa-location-crosshairs fa-3x mb-4"></i>
+                <h5 class="fw-bold">Hasil Tujuan 3</h5>
+                <p>Peta Dampak Kerawanan Longsor</p>
+                <span class="link-dashboard">
+                  Lihat Dashboard <i class="fas fa-arrow-right ms-2"></i>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="petunjuk-box mt-5">
+          <p class="mb-0">
+            <strong>Catatan:</strong> Setiap dashboard menampilkan peta
+            interaktif beserta penjelasan mengenai temuan penelitian.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="faq py-5" id="faq">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h1 class="fw-bold">Frequently Asked Questions (FAQ)</h1>
+          <p>Pertanyaan yang sering diajukan mengenai penelitian ini</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="accordion" id="faqAccordionKiri">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                  >
+                    Apa tujuan utama penelitian ini?
+                  </button>
+                </h2>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordionKiri"
+                >
+                  <div class="accordion-body">
+                    Penelitian ini bertujuan memetakan kerawanan, menganalisis
+                    sebaran spasial daerah rawan, menganalisis dampak dari
+                    kerawanan tersebut, dan membangun web interaktif untuk
+                    menyajikan semua hasil temuan.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                  >
+                    Metode apa yang digunakan untuk analisis kerawanan?
+                  </button>
+                </h2>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordionKiri"
+                >
+                  <div class="accordion-body">
+                    Metode utama yang digunakan adalah
+                    <strong>Fuzzy Logic</strong> yang dikombinasikan dengan
+                    Sistem Informasi Geografis (SIG). Fuzzy Logic dipilih karena
+                    kemampuannya dalam mengolah data spasial secara efisien
+                    untuk pemetaan kerawanan.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                  >
+                    Apa itu tanah longsor menurut definisi?
+                  </button>
+                </h2>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordionKiri"
+                >
+                  <div class="accordion-body">
+                    Menurut UU No. 24 Tahun 2007, tanah longsor adalah salah
+                    satu jenis gerakan massa tanah atau batuan, menuruni atau
+                    keluar lereng karena terganggunya kestabilan tanah atau
+                    batuan yang menyusun lereng.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-3 mt-lg-0">
+            <div class="accordion" id="faqAccordionKanan">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq4"
+                  >
+                    Faktor apa saja yang menyebabkan tanah longsor?
+                  </button>
+                </h2>
+                <div
+                  id="faq4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordionKanan"
+                >
+                  <div class="accordion-body">
+                    Bencana longsor berkaitan dengan faktor alam seperti curah
+                    hujan, kemiringan lereng, tutupan lahan, jenis tanah, dan
+                    ketinggian. Hujan lebat sering menjadi pemicu utama karena
+                    meningkatkan kejenuhan tanah.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq5"
+                  >
+                    Data apa saja yang digunakan dalam penelitian ini?
+                  </button>
+                </h2>
+                <div
+                  id="faq5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordionKanan"
+                >
+                  <div class="accordion-body">
+                    Data utama berasal dari DEMNAS (ketinggian & lereng), Citra
+                    Satelit Landsat 8 (tutupan lahan), CHIRPS (curah hujan), dan
+                    Bappedalitbang Kabupaten Bogor (jenis tanah).
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq6"
+                  >
+                    Apa manfaat dari penelitian ini?
+                  </button>
+                </h2>
+                <div
+                  id="faq6"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordionKanan"
+                >
+                  <div class="accordion-body">
+                    Penelitian ini bermanfaat bagi pemerintah daerah sebagai
+                    rekomendasi kebijakan mitigasi, serta bagi masyarakat untuk
+                    meningkatkan kesadaran dan kesiapsiagaan terhadap potensi
+                    bencana tanah longsor di wilayah mereka.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 mb-4 mb-lg-0">
+            <h5 class="fw-bold text-white">Politeknik Statistika STIS</h5>
+            <p class="text-white-50 mt-3">
+              Analisis Spasial dan Pemetaan Tingkat Kerawanan Fisik Alami Tanah
+              Longsor di Kabupaten Bogor Tahun 2023.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5 class="fw-bold text-white">Quick Links</h5>
+            <ul class="list-unstyled mt-3">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#pendahuluan">Pendahuluan</a></li>
+              <li><a href="#tujuan">Tujuan</a></li>
+              <li><a href="#hasil">Hasil</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <h5 class="fw-bold text-white">Contact</h5>
+            <ul class="list-unstyled mt-3">
+              <li>
+                <p class="text-white-50">
+                  Program Studi D4 Komputasi Statistik
+                </p>
+              </li>
+              <li>
+                <p class="text-white-50">Politeknik Statistika STIS</p>
+              </li>
+              <li>
+                <p class="text-white-50">Jakarta, Indonesia</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col text-center">
+            <p class="text-white-50 small">
+              &copy; 2025 Yuli Arindah (Politeknik Statistika STIS). Artefak D4
+              Komputasi Statistik - Sains Data.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div id="tujuan-overlay">
+      <div id="tujuan-modal">
+        <i class="fa-solid fa-xmark close-btn"></i>
+        <h2 id="modal-title" class="fw-bold"></h2>
+        <hr />
+        <p id="modal-text"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

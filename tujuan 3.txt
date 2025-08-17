@@ -1,0 +1,63 @@
+1.	Memetakan kerawanan fisik alami tanah longsor berdasarkan faktor curah hujan, kemiringan lereng, jenis tanah, ketinggian, dan tutupan lahan.
+2.	Menganalisis spasial sebaran daerah rawan bencana tanah longsor.
+3.	Menganalisis dampak kerawanan fisik alami bencana tanah longsor.
+4.	Membangun web yang berguna dalam menyajikan hasil penelitian.
+
+*kalo ditanya, dijawab dengan jelas jangan singkat"
+
+1= Gleisol Distrik, Kambisol Gleik
+2= 
+
+Tujuan 1:
+file:///C:/Users/USER/AppData/Local/Temp/qgis2web/qgis2web_2025_08_04-10_02_15_973553/index.html#9/-6.2798/106.8146
+
+Tujuan 2
+-Per Desa: 
+file:///C:/Users/USER/AppData/Local/Temp/qgis2web/qgis2web_2025_08_03-21_46_09_009686/index.html#10/-6.5459/106.7967 
+
+Tujuan 3:
+Thiessen lokpen:
+Buffer Lokpen
+500:
+1000:
+1500:
+2000:
+
+Thiessen RS:
+Buffer RS
+500:
+1000:
+1500:
+2000:
+
+Thiessen Perumahan:
+Buffer Perumahan:
+500:
+1000:
+1500:
+2000:
+
+Buffer Jalan
+
+
+CH
+besar:
+def classifyRainfall(p1, p2, p3, p4, p5):
+  # Baris di bawah ini harus sedikit menjorok ke kanan
+  max_val = max(p1, p2, p3, p4, p5)
+
+  # Baris-baris IF/ELIF/ELSE juga harus menjorok
+  if max_val == p1:
+    # Baris RETURN harus lebih menjorok lagi
+    return "Sangat Ringan"
+  elif max_val == p2:
+    return "Ringan"
+  elif max_val == p3:
+    return "Normal"
+  elif max_val == p4:
+    return "Lebat"
+  else:
+    return "Sangat Lebat"
+kecil: 
+classifyRainfall(!P_0_2000!, !P_2000_2500!, !P_2500_3000!, !P_3000_3500!, !P_3500_lebih!)
+
