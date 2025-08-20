@@ -1,97 +1,57 @@
-<<<<<<< HEAD
-"# FIXARTEFAK" 
-=======
 # Analisis Spasial dan Pemetaan Tingkat Kerawanan Fisik Alami Tanah Longsor Menggunakan Data Geospasial Citra Satelit Tahun 2023 Studi Kasus Kabupaten Bogor
 
+Dokumentasi ini berisi informasi mengenai proyek skripsi, termasuk deskripsi singkat, struktur folder, dan penjelasan dari setiap bagiannya.
 
+---
 
-## Getting started
+## Informasi Proyek
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+- **Judul Skripsi**: Analisis Spasial dan Pemetaan Tingkat Kerawanan Fisik Alami Tanah Longsor Menggunakan Data Geospasial Citra Satelit Tahun 2023 Studi Kasus Kabupaten Bogor
+- **NIM**: 222112423
+- **Nama**: [Nama Lengkap Mahasiswa]
+- **Dosen Pembimbing**: [Nama Lengkap Dosen Pembimbing]
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+---
 
-## Add your files
+## Deskripsi Singkat
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+Website ini merupakan visualisasi dari hasil penelitian skripsi yang menyajikan **analisis spasial dan pemetaan mengenai tingkat kerawanan fisik alami tanah longsor** di Kabupaten Bogor. Website ini menampilkan serangkaian peta interaktif yang memvisualisasikan data-data geospasial terkait faktor-faktor penyebab longsor serta peta hasil akhir tingkat kerawanan.
 
-```
-cd existing_repo
-git remote add origin https://git.stis.ac.id/222112423/analisis-spasial-dan-pemetaan-tingkat-kerawanan-fisik-alami-tanah-longsor-menggunakan-data-geospasial-citra-satelit-tahun-2023-studi-kasus-kabupaten-bogor.git
-git branch -M main
-git push -uf origin main
-```
+Tujuan utama dari proyek ini adalah untuk menyediakan alat bantu visual yang informatif bagi pemerintah daerah dan pihak terkait. Diharapkan hasil pemetaan ini dapat menjadi dasar untuk **rekomendasi kebijakan, upaya mitigasi atau evaluasi bencana, serta perencanaan tata ruang** yang lebih baik di masa depan.
 
-## Integrate with your tools
+---
 
-- [ ] [Set up project integrations](https://git.stis.ac.id/222112423/analisis-spasial-dan-pemetaan-tingkat-kerawanan-fisik-alami-tanah-longsor-menggunakan-data-geospasial-citra-satelit-tahun-2023-studi-kasus-kabupaten-bogor/-/settings/integrations)
+## Struktur Folder Proyek
 
-## Collaborate with your team
+Berikut adalah struktur folder utama dari proyek ini beserta penjelasannya untuk memudahkan navigasi dan pemahaman.
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+FIXARTEFAK/
+├── .vscode/ # Pengaturan spesifik untuk editor Visual Studio Code
+├── assets/ # Berisi aset pendukung proyek (gambar mentah, proposal, dll)
+├── DASHBOARD/ # Berisi file-file data mentah Geospasial (QGIS, GeoPackage)
+│
+├── dashboard-dampak-kesehatan/ # Folder output peta web dampak terhadap fasilitas kesehatan
+├── dashboard-dampak-pendidikan/ # Folder output peta web dampak terhadap fasilitas pendidikan
+├── dashboard-dampak-perumahan-1000/ # Peta web dampak terhadap perumahan (buffer 1000m)
+├── dashboard-dampak-perumahan-1500/ # Peta web dampak terhadap perumahan (buffer 1500m)
+├── dashboard-dampak-perumahan-2000/ # Peta web dampak terhadap perumahan (buffer 2000m)
+├── dashboard-hasil-1/ # Folder output peta web untuk hasil analisis pertama
+└── dashboard-hasil-2/ # Folder output peta web untuk hasil analisis kedua
+│
+├── dist/ # Folder distribusi untuk halaman web utama
+│ ├── css/ # File CSS yang telah diproses/diminifikasi
+│ └── js/ # File JavaScript yang telah diproses/diminifikasi
+│
+├── .gitattributes # File konfigurasi Git
+├── index.html # Halaman utama (landing page) dari website
+├── script.js # File JavaScript utama untuk fungsionalitas index.html
+├── style.css # File CSS utama untuk styling index.html
+└── README.md # File ini
 
-## Test and Deploy
+### Penjelasan Struktur
 
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
->>>>>>> a6cb2c4c548cdea0c61c1d678732d8c1d6851225
+- **Folder `dashboard-*`**: Setiap folder dengan awalan `dashboard-` berisi satu set lengkap file untuk menampilkan peta web interaktif. Folder-folder ini kemungkinan besar merupakan hasil ekspor dari perangkat lunak GIS seperti QGIS (menggunakan plugin `qgis2web`). Masing-masing folder bersifat mandiri (_self-contained_) dan memiliki file `index.html`-nya sendiri yang dapat dibuka langsung di browser.
+- **Folder `DASHBOARD` (kapital)**: Folder ini berfungsi sebagai tempat penyimpanan data mentah geospasial (`.gpkg`, `.qgz`) yang menjadi dasar dari semua analisis dan pemetaan yang dilakukan.
+- **Folder `assets`**: Berisi file-file pendukung non-kode yang digunakan selama pengembangan proyek, seperti gambar-gambar peta untuk laporan, dokumen proposal, dan aset visual lainnya.
+- **Folder `dist`**: Merupakan folder "distribusi" yang berisi versi final dari aset (CSS, JS) untuk halaman web utama. Praktik umum adalah menempatkan file yang sudah dioptimalkan di sini.
+- **File di root (`index.html`, `script.js`, `style.css`)**: Ini adalah file inti yang membangun halaman utama atau _landing page_ dari keseluruhan proyek. Halaman ini kemungkinan besar berfungsi sebagai portal untuk mengakses berbagai peta yang ada di dalam folder `dashboard-*`.
